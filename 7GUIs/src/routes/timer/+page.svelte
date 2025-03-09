@@ -1,13 +1,13 @@
 <script lang="ts">
   let elapsed = $state(0);
   let duration = $state(5);
-	let interval: number
+  let interval: number;
 
   function start() {
     interval = setInterval(() => {
       elapsed += 0.1;
       if (elapsed > duration) {
-				elapsed = duration
+        elapsed = duration;
         clearInterval(interval);
       }
     }, 100);
@@ -19,10 +19,10 @@
   }
 
   $effect(() => {
-		if (!duration) return
-		start()
-		return () => clearInterval(interval)
-	});
+    if (!duration) return;
+    start();
+    return () => clearInterval(interval);
+  });
 </script>
 
 <div>

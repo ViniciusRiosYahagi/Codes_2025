@@ -36,7 +36,7 @@
     <input type="date" bind:value={startDate} min={getDate()} required />
   </label>
 
-  {#if selected === 'return'}
+  {#if selected === "return"}
     <label>
       <span>Select the return date:</span>
       <input type="date" bind:value={returnDate} min={getDate()} required />
