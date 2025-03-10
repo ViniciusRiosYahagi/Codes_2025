@@ -9,7 +9,7 @@ function pesquisa_binaria(lista, item) {
       if (chute === item) {
           return meio
       } else if (chute > item) {
-          console.log(alto = meio - 1)
+          alto = meio - 1
       } else {
           baixo = meio + 1
       }
@@ -19,4 +19,4 @@ function pesquisa_binaria(lista, item) {
 
 const minha_lista = [ 1, 3, 5, 7, 9 , 77 ]
 
-console.log(pesquisa_binaria(minha_lista, 1))
+console.log(pesquisa_binaria(minha_lista, 5))
